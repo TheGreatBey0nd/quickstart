@@ -11,6 +11,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'   # klont alle Submodule (rekursiv)
+          fetch-depth: 0            # optional, nützlich wenn Tags/History gebraucht werden
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
