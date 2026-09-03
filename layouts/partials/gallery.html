@@ -2,29 +2,39 @@
 
 {{ $gallery := site.GetPage "section" "gallery" }}
 {{ with $gallery }}
-  {{ $pages := .PagesRecursive | append . }}
-  {{ $hasImages := false }}
-  {{ range $pages }}
-    {{ if gt (len (.Resources.ByType "image")) 0 }}
-      {{ $hasImages = true }}
-    {{ end }}
-  {{ end }}
-  {{ if $hasImages }}
+  {{ if $gallery.Content }}
+    <!-- Neue Gallery mit Filtern via Shortcode -->
     <section id="gallery" class="gallery-section">
       <div class="container">
-        <h2>{{ .Title }}</h2>
-        <div class="gallery-grid">
-          {{ range $pages }}
-            {{ range .Resources.ByType "image" }}
-              {{ $thumbnail := .Fit "600x600" }}
-              <a class="gallery-item" href="{{ .RelPermalink }}" data-gallery-image="{{ .RelPermalink }}" data-gallery-title="{{ .Title }}">
-                <img src="{{ $thumbnail.RelPermalink }}" width="{{ $thumbnail.Width }}" height="{{ $thumbnail.Height }}" alt="{{ .Title }}" loading="lazy">
-              </a>
-            {{ end }}
-          {{ end }}
-        </div>
+        {{ $gallery.Content }}
       </div>
     </section>
-    <script src="{{ "js/gallery-lightbox.js" | relURL }}" defer></script>
+  {{ else }}
+    <!-- Fallback: Alte Gallery ohne Filter -->
+    {{ $pages := .PagesRecursive | append . }}
+    {{ $hasImages := false }}
+    {{ range $pages }}
+      {{ if gt (len (.Resources.ByType "image")) 0 }}
+        {{ $hasImages = true }}
+      {{ end }}
+    {{ end }}
+    {{ if $hasImages }}
+      <section id="gallery" class="gallery-section">
+        <div class="container">
+          <h2>{{ .Title }}</h2>
+          <div class="gallery-grid">
+            {{ range $pages }}
+              {{ range .Resources.ByType "image" }}
+                {{ $thumbnail := .Fit "600x600" }}
+                <a class="gallery-item" href="{{ .RelPermalink }}" data-gallery-image="{{ .RelPermalink }}" data-gallery-title="{{ .Title }}">
+                  <img src="{{ $thumbnail.RelPermalink }}" width="{{ $thumbnail.Width }}" height="{{ $thumbnail.Height }}" alt="{{ .Title }}" loading="lazy">
+                </a>
+              {{ end }}
+            {{ end }}
+          </div>
+        </div>
+      </section>
+      <script src="{{ "js/gallery-lightbox.js" | relURL }}" defer></script>
+    {{ end }}
   {{ end }}
 {{ end }}
