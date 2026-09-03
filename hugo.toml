@@ -2,6 +2,11 @@ baseURL = "https://thegreatbey0nd.github.io/quickstart/"
 languageCode = "en-us"
 theme = ["radity", "hugo-shortcode-gallery"]
 
+# Gallery-Konfiguration
+[imaging.meta]
+  fields = ["**"]
+  sources = ["exif"]
+
 # Plugins
 [params.plugins]
 
