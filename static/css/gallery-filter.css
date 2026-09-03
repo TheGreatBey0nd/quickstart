@@ -1,0 +1,14 @@
+/* Gallery Filter Buttons - Custom Styling */
+.justified-gallery-filterbar button {
+  color: #000 !important;
+  border-color: #333 !important;
+}
+
+.justified-gallery-filterbar button:hover {
+  color: #000 !important;
+}
+
+.justified-gallery-filterbar button.selected {
+  color: #000 !important;
+  background-color: #e0e0e0 !important;
+}
