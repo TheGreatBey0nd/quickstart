@@ -1,6 +1,6 @@
 baseURL = "https://thegreatbey0nd.github.io/quickstart/"
 languageCode = "en-us"
-theme = "radity"
+theme = ["radity", "hugo-shortcode-gallery"]
 
 # Plugins
 [params.plugins]
