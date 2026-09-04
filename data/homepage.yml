@@ -54,7 +54,7 @@ showcase:
 
 # about
 about:
-  enable: false
+  enable: true
   title: "Who am I?"
   content: '<p class="lead">
     I am back, after a few days of vacationing with family. Weather was awesome, the beach was
