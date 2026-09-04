@@ -4,7 +4,7 @@
 
 .gallery-section h2 {
   margin-bottom: 2rem;
-  color: #6efd3a;
+  color: #000 !important;
 }
 
 .gallery-grid {
@@ -17,7 +17,7 @@
   display: block;
   overflow: hidden;
   aspect-ratio: 1;
-  background: #ae2828;
+  background: #f2f2f2;
 }
 
 .gallery-item img {
@@ -64,7 +64,7 @@
   position: absolute;
   z-index: 1;
   border: 0;
-  color: #2aa486;
+  color: #fff;
   background: transparent;
   font-size: 2.5rem;
   line-height: 1;
