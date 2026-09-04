@@ -10,6 +10,7 @@
         {{ $gallery.Content }}
       </div>
     </section>
+    <link rel="stylesheet" href="{{ "css/gallery-filter.css" | relURL }}">
   {{ else }}
     <!-- Fallback: Alte Gallery ohne Filter -->
     {{ $pages := .PagesRecursive | append . }}

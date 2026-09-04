@@ -1,14 +1,52 @@
 /* Gallery Filter Buttons - Custom Styling */
-.justified-gallery-filterbar button {
-  color: #000 !important;
-  border-color: #333 !important;
+.justified-gallery-filterbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
-.justified-gallery-filterbar button:hover {
+.justified-gallery-filterbar button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  padding: 0 0.5rem;
   color: #000 !important;
+  border: 0 !important;
+  background: transparent !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.justified-gallery-filterbar button::after {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 5px;
+  left: 0.5rem;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.6);
+  content: "";
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.justified-gallery-filterbar button:hover,
+.justified-gallery-filterbar button:focus-visible {
+  color: #000 !important;
+  outline: none;
+}
+
+.justified-gallery-filterbar button:hover::after,
+.justified-gallery-filterbar button:focus-visible::after {
+  transform: scaleX(1);
 }
 
 .justified-gallery-filterbar button.selected {
   color: #000 !important;
-  background-color: #a00c0c !important;
 }

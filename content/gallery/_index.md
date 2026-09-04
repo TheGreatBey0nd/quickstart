@@ -22,6 +22,6 @@ resources:
   previewType="blur" 
   embedPreview=true 
   loadJQuery=true
-  filterOptions="[{label: 'Alle', tags: '.*'}, {label: 'Katzen', tags: 'cat'}, {label: 'Natur', tags: 'nature'}, {label: 'Architektur', tags: 'architecture'}]"
+  filterOptions="[{label: 'ALLE', tags: '.*'}, {label: 'KATZEN', tags: 'cat'}, {label: 'NATUR', tags: 'nature'}, {label: 'ARCHITEKTUR', tags: 'architecture'}]"
   storeSelectedFilterInUrl=true
 >}}
