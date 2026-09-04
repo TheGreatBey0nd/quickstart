@@ -69,12 +69,12 @@ theme = ["radity", "hugo-shortcode-gallery"]
   googleTagManagerID = "GTM-000000" # Google Analytics works with Google Tag Manager
 
   [params.logo]
-    text1 = "AndreasD"
-    text2 = "EllureX"
+    text1 = "Just"
+    text2 = "Nina"
 
   [params.footer]
-      copyright = "© Raditian. All rights reserved."
+      copyright = "thegreatbey0nd"
       [params.footer.radity_logo]
-        x = "img/general/design-and-code-radity.png"
-        _2x = "img/general/design-and-code-radity@2x.png"
+        x = "img/justnina-logo.jpg"
+        _2x = "img/justnina-logo.jpg"
         alt = "Design & Code - Radity"
