@@ -1,5 +1,5 @@
 ---
-title: "Gallery"
+title: "Musik"
 description: "Eine Auswahl meiner Bilder mit Filteroptionen"
 
 date: 2024-02-18T14:12:44+0100
@@ -22,6 +22,6 @@ resources:
   previewType="blur" 
   embedPreview=true 
   loadJQuery=true
-  filterOptions="[{label: 'ALLE', tags: '.*'}, {label: 'KATZEN', tags: 'cat'}, {label: 'NATUR', tags: 'nature'}, {label: 'ARCHITEKTUR', tags: 'architecture'}]"
+  filterOptions="[{label: 'ALLE', tags: '.*'}, {label: 'AKTUELL', tags: 'new'}, {label: 'DAMALS', tags: 'old'} ]"
   storeSelectedFilterInUrl=true
 >}}
