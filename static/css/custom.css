@@ -1,8 +1,9 @@
 /* You can customize theme styles here */
 
-.header .navbar-brand img {
-  max-height: 40px;
-  width: auto;
+.header__logo-text {
+  font-family: "Jeffriana";
+  font-size: 2rem;
+  line-height: 1;
 }
 
 @font-face {

@@ -2,11 +2,7 @@
   <div class="container rad-fade-in">
     <nav class="navbar navbar-expand-lg navbar-light p-0">
       <a class="navbar-brand" href="{{ .Site.BaseURL | absURL }}">
-        <img
-          class="img-responsive"
-          src="{{ "img/justnina-logo.jpg" | absURL }}"
-          alt="{{ .Site.Params.logo.text1 }}{{ .Site.Params.logo.text2 }}"
-        />
+        <span class="header__logo-text">{{ .Site.Params.logo.text1 }}{{ .Site.Params.logo.text2 }}</span>
       </a>
       <button
         class="navbar-toggler"

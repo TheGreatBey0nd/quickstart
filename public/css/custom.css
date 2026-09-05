@@ -1,6 +1,55 @@
 /* You can customize theme styles here */
 
-.header .navbar-brand img {
-  max-height: 40px;
-  width: auto;
+.header__logo-text {
+  font-family: "Jeffriana";
+  font-size: 2rem;
+  line-height: 1;
+}
+
+@font-face {
+  font-family: "Jeffriana";
+  src: url("../jeffriana.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.rad-showcase__title,
+.about__title,
+.experience__section-title,
+.contact__section-title {
+  font-family: "Jeffriana"
+}
+
+#about {
+  padding-top: 200px;
+  /* .pb-0 utility class uses !important, must be overridden explicitly */
+  padding-bottom: 20px !important;
+}
+
+/* swipebox docks prev/next arrows in a bottom bar by default; keep that bar always
+   in place so its transform doesn't shift the fixed-positioned arrows below */
+#swipebox-bottom-bar {
+  bottom: 0 !important;
+  transform: none !important;
+}
+
+/* swipebox.min.css loads after this stylesheet, so top/position need !important to win */
+#swipebox-prev,
+#swipebox-next {
+  position: fixed !important;
+  top: 50% !important;
+  float: none;
+  transform: translateY(-50%);
+}
+
+#swipebox-prev {
+  left: 20px;
+}
+
+#swipebox-next {
+  right: 20px;
+}
+
+#swipebox-description {
+  display: none !important;
 }
