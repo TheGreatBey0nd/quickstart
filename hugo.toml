@@ -31,17 +31,17 @@ theme = ["radity", "hugo-shortcode-gallery"]
 [menu]
 
   [[menu.header]]
-  name = "About"
+  name = "Über mich"
   URL = "#about"
   weight = 2
 
   [[menu.header]]
-  name = "Portfolio"
-  URL = "#portfolio"
+  name = "Musik"
+  URL = "#gallery"
   weight = 3
 
   [[menu.header]]
-  name = "Contact"
+  name = "Kontakt"
   URL = "#contact"
   weight = 4
 
@@ -64,9 +64,7 @@ theme = ["radity", "hugo-shortcode-gallery"]
 
 [params]
 
-  sections = ["showcase", "gallery", "about", "education", "experience", "client-and-work", "testimonial", "contact", "newsletter"]
-
-  googleTagManagerID = "GTM-000000" # Google Analytics works with Google Tag Manager
+  sections = ["showcase", "client-and-work", "about", "gallery", "education",  "experience", "testimonial", "contact", "newsletter"]
 
   [params.logo]
     text1 = "Just"

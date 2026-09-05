@@ -11,16 +11,16 @@ showcase:
   description: "Ich singe auf Hochzeiten, Taufen, Geburtstagen, Jubiläen, Firmenfeiern und Beerdigungen. Ich singe auf Deutsch, Englisch und Italienisch. Ich freue mich auf Ihre Anfrage."
   image:
     alt: "Showcase keyboard and mouse image"
-    x: "img/showcase/showcase.png"
-    _2x: "img/showcase/showcase@2x.png"
+    x: "img/nina-1.jpg"
+    _2x: "img/nina-1.jpg"
   imageMobile:
     alt: "Showcase keyboard and mouse image"
-    x: "img/showcase/showcase-mobile.jpg"
+    x: "img/nina-1.jpg"
 
   button:
     icon: "icon-mail-fill"
     btnText: "Contact"
-    URL: "https://radity.com/en/contact/"
+    URL: "#contact"
 
   socialLinks:
     - icon: "linkedin"
@@ -32,28 +32,24 @@ showcase:
 # about
 about:
   enable: true
-  title: "Who am I?"
+  title: "Wer bin ich?"
   content: '<p class="lead">
-    I am back, after a few days of vacationing with family. Weather was awesome, the beach was
-    full of nasty jelly-fish, yuk! All-in-all, life has been good. I hope life has been as
-    good for all of you.
+    Ich bin eine Sängerin, die auf Hochzeiten, Taufen, Geburtstagen, Jubiläen, Firmenfeiern und Beerdigungen singt. Ich singe auf Deutsch, Englisch und Italienisch. Ich freue mich auf Ihre Anfrage.
     </p>
     <p class="lead">
-    My area of focus lies in designing web and mobile products, user research as well as
-    leading of design & front-end teams. I enjoy designing and coding the UI as much as
-    talking with users to iterate and improve the experiences that reach business goals.
+    Ich habe über 15 Jahre Erfahrung in der Arbeit mit Unternehmen aus der ganzen Welt. Ich entwerfe und entwickle digitale Produkte, um Unternehmen zu helfen und das Leben der Menschen zu verbessern.
     </p>'
   button:
     icon: "icon-smile-fill"
     btnText: "About Me"
     URL: "https://www.linkedin.com/company/radity/"
   image:
-    x: "img/who-am-i/user-picture.png"
-    _2x: "img/who-am-i/user-picture@2x.png"
+    x: "img/nina-2.jpg"
+    _2x: "img/nina-2.jpg"
 
 # education
 education:
-  enable: true
+  enable: false
   title: "Education"
   items:
     - university: "University of Waterloo"
@@ -67,8 +63,8 @@ education:
 # experience
 experience:
   enable: true
-  title: "Experience"
-  description: "Over 15+ years of experience working with companies from all over the world. I design & develop digital products to help businesses and improve people's lives."
+  title: "Öffentliche Auftritte"
+  description: "Hier kannst du mich live erleben. Ich singe auf Hochzeiten, Taufen, Geburtstagen, Jubiläen, Firmenfeiern und Beerdigungen. Ich singe auf Deutsch, Englisch und Italienisch. Ich freue mich auf Ihre Anfrage."
   button:
     icon: "icon-linkedin-fill"
     btnText: "Linkedin"
@@ -79,22 +75,22 @@ experience:
     URL: "#"
 
   items:
-    - title: "Sr. Front-End Developer"
-      company: "Radity"
-      duration: "Feb 2011 - Sep 2019"
+    - title: "Kieler Woche"
+      company: 'abc <a href="https://www.kieler-woche.de/" target="_blank" rel="noopener noreferrer">Kieler Woche</a>'
+      duration: "27. Juni 2024"
 
-    - title: "Sr. Front-End Developer"
+    - title: "Bootshafen Sommer"
       company: "Textic"
-      duration: "Apr 2010 - Jan 2011"
+      duration: "16.07.-18.07.2024"
 
-    - title: "Jr. Front-End Developer"
+    - title: "Frühstücksfernsehen"
       company: "Cyberse"
       duration: "Jun 2009 - Mar 2010"
 
 # Client & Work
 client_and_work:
   title: "Clients & Works"
-  enable: true
+  enable: false
 
   clients:
     - logo:
@@ -163,7 +159,7 @@ client_and_work:
 
 # testimonial
 testimonial:
-  enable: true
+  enable: false
   title: "Testimonials"
   items:
     - name: "Daniel Jordan"
@@ -190,29 +186,29 @@ testimonial:
 # contact
 contact:
   enable: true
-  title: "Contact"
+  title: "Kontakt"
   form:
     method: "POST"
     action: "#"
-    full_name: "Full Name"
+    full_name: "Name"
     email: "Email Address"
-    message: "Type Your Message Here"
+    message: "Deine Nachricht"
   phone:
-    title: "Phone Number"
-    number: "+41 (44) 505 10 99"
+    title: "Telefon"
+    number: "0176 123 456 78"
   email:
-    title: "Email"
-    email: '<a href="mailto:team@radity.com">team@radity.com</a>'
+    title: "E-Mail"
+    email: '<a href="mailto:team@example.com">team@example.com</a>'
   address:
-    title: "Address"
-    address: "Radity GmbH<br />Max-Bill-Platz 5, 8050 Zürich"
+    title: "Adresse"
+    address: "Musterstraße<br />12345 Musterstadt<br />Deutschland"
   button:
     icon: "icon-mail-fill"
-    btnText: "Send Message"
+    btnText: "Senden"
 
 # newsletter
 newsletter:
-  enable: true
+  enable: false
   title: "Newsletter subscription"
   success_message: "Successfully subscribed"
   error_message: "Error while subscribing."
