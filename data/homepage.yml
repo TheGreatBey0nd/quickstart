@@ -24,10 +24,10 @@ showcase:
 
   socialLinks:
     - icon: "linkedin"
-      URL: "https://www.linkedin.com/company/radity/"
+      URL: "https://www.linkedin.com/"
 
     - icon: "github"
-      URL: "https://github.com/radity"
+      URL: "https://github.com/"
 
 # about
 about:
