@@ -62,7 +62,7 @@ education:
 
 # experience
 experience:
-  enable: true
+  enable: false
   title: "Öffentliche Auftritte"
   description: "Hier kannst du mich live erleben. Ich singe auf Hochzeiten, Taufen, Geburtstagen, Jubiläen, Firmenfeiern und Beerdigungen. Ich singe auf Deutsch, Englisch und Italienisch. Ich freue mich auf Ihre Anfrage."
   button:
