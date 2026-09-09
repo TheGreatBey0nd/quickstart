@@ -10,7 +10,7 @@
                     <div class="experience__company">{{ .company | safeHTML }}</div>
                     {{ with .mp3 }}
                     <div class="experience__audio mt-3">
-                        <audio controls preload="none" style="width: 100%; max-width: 100%;">
+                        <audio controls preload="none">
                             <source src="{{ . | absURL }}" type="audio/mpeg">
                             Dein Browser unterstützt kein HTML5-Audio.
                         </audio>

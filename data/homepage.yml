@@ -40,6 +40,7 @@ about:
     Ich habe über 15 Jahre Erfahrung in der Arbeit mit Unternehmen aus der ganzen Welt. Ich entwerfe und entwickle digitale Produkte, um Unternehmen zu helfen und das Leben der Menschen zu verbessern.
     </p>'
   button:
+    enable: false
     icon: "icon-smile-fill"
     btnText: "About Me"
     URL: "https://www.linkedin.com/company/radity/"

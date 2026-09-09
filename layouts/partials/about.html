@@ -16,14 +16,18 @@
         <p class="lead">
           {{ .Site.Data.homepage.about.content | safeHTML }}
         </p>
-        <a
-          href="{{ .Site.Data.homepage.about.button.URL | absURL }}"
-          target="_blank"
-          class="btn btn-primary"
-        >
-          <i class="{{ .Site.Data.homepage.about.button.icon }}"></i>
-          {{ .Site.Data.homepage.about.button.btnText }}
-        </a>
+        {{ with .Site.Data.homepage.about.button }}
+          {{ if or (not (isset . "enable")) .enable }}
+          <a
+            href="{{ .URL | absURL }}"
+            target="_blank"
+            class="btn btn-primary"
+          >
+            <i class="{{ .icon }}"></i>
+            {{ .btnText }}
+          </a>
+          {{ end }}
+        {{ end }}
       </div>
     </div>
   </div>
