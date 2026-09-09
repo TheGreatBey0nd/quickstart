@@ -8,6 +8,14 @@
                     <div class="experience__date">{{ .duration }}</div>
                     <div class="experience__title">{{ .title }}</div>
                     <div class="experience__company">{{ .company | safeHTML }}</div>
+                    {{ with .mp3 }}
+                    <div class="experience__audio mt-3">
+                        <audio controls preload="none" style="width: 100%; max-width: 100%;">
+                            <source src="{{ . | absURL }}" type="audio/mpeg">
+                            Dein Browser unterstützt kein HTML5-Audio.
+                        </audio>
+                    </div>
+                    {{ end }}
                 </div>
                 {{ end }}
             </div>
@@ -16,16 +24,25 @@
                 <p class="lead">
                     {{ .Site.Data.homepage.experience.description }}
                 </p>
-                <a href="{{ .Site.Data.homepage.experience.button.URL | absURL }}" class="btn btn-primary"
-                   target="_blank">
-                    <i class="{{ .Site.Data.homepage.experience.button.icon }}"></i>
-                    {{ .Site.Data.homepage.experience.button.btnText }}
-                    <i class="icon-arrow-right"></i></a>
-                <a href="{{ .Site.Data.homepage.experience.button2.URL | absURL }}" class="btn btn-frameless"
-                   target="_blank">
-                    <i class="{{ .Site.Data.homepage.experience.button2.icon }}"></i>
-                    {{ .Site.Data.homepage.experience.button2.btnText }}
-                </a>
+                {{ with .Site.Data.homepage.experience.button }}
+                    {{ if or (not (isset . "enable")) .enable }}
+                    <a href="{{ .URL | absURL }}" class="btn btn-primary"
+                       target="_blank">
+                        <i class="{{ .icon }}"></i>
+                        {{ .btnText }}
+                        <i class="icon-arrow-right"></i>
+                    </a>
+                    {{ end }}
+                {{ end }}
+                {{ with .Site.Data.homepage.experience.button2 }}
+                    {{ if or (not (isset . "enable")) .enable }}
+                    <a href="{{ .URL | absURL }}" class="btn btn-frameless"
+                       target="_blank">
+                        <i class="{{ .icon }}"></i>
+                        {{ .btnText }}
+                    </a>
+                    {{ end }}
+                {{ end }}
             </div>
         </div>
     </div>

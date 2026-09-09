@@ -16,7 +16,9 @@
 .rad-showcase__title,
 .about__title,
 .experience__section-title,
-.contact__section-title {
+.contact__section-title,
+#portfolio h2,
+#portfolio h3 {
   font-family: "Jeffriana"
 }
 
@@ -52,4 +54,62 @@
 
 #swipebox-description {
   display: none !important;
+}
+
+.education {
+  position: relative;
+  overflow: hidden;
+  padding: 1.5rem 1.25rem;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+}
+
+.education::before {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.education__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  transform: translate(-50%, -50%);
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.education > *:not(.education__logo) {
+  position: relative;
+  z-index: 1;
+}
+
+.video-card {
+  background: #f7f7f7;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.video-card video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  background: #000;
+}
+
+.video-card h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.video-card p {
+  margin-bottom: 0;
 }

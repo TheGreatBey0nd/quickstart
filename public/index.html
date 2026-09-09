@@ -238,8 +238,13 @@
 	<header class="header fixed-top rad-animation-group" id="header">
   <div class="container rad-fade-in">
     <nav class="navbar navbar-expand-lg navbar-light p-0">
-      <a class="navbar-brand" href="http://localhost:1313/quickstart/">
-        <span class="header__logo-text">JustNina</span>
+      <a class="navbar-brand" href="http://localhost:1313/quickstart/" aria-label="">
+        <img
+          src="http://localhost:1313/quickstart/img/Logo.jpg"
+          alt=""
+          class="header__logo-image"
+          style="max-height: 42px; width: auto;"
+        />
       </a>
       <button
         class="navbar-toggler"
@@ -350,11 +355,6 @@
 	
    
 	
-
-
-	
-   
-	
 <section class="section rad-animation-group pb-0" id="about">
   <div class="container rad-fade-down">
     <div class="row d-flex flex-column-reverse flex-md-row">
@@ -397,7 +397,7 @@
     
     <section id="gallery" class="gallery-section">
       <div class="container">
-        <h2>Musik</h2>
+        <h2>Bilder</h2>
         
 
 
@@ -569,8 +569,6 @@
 						
 
 						
-							data-description="SM-G925F<br/>11/5mm f/1.9 1/17sec  ISO 320"
-						
 
 						
 							
@@ -648,8 +646,6 @@
 						
 
 						
-							data-description="<br/> "
-						
 
 						
 							
@@ -726,8 +722,6 @@
 					
 						
 
-						
-							data-description="<br/> "
 						
 
 						
@@ -807,8 +801,6 @@
 							title="ein Bild von mir und ..."
 						
 
-						
-							data-description="SM-G925F<br/>11/5mm f/1.9 1/17sec  ISO 400"
 						
 
 						
@@ -891,8 +883,6 @@
 						
 
 						
-							data-description="SM-G925F<br/>11/5mm f/1.9 1/500sec  ISO 50"
-						
 
 						
 							
@@ -974,8 +964,6 @@
 						
 
 						
-							data-description="<br/> "
-						
 
 						
 							
@@ -1040,7 +1028,9 @@
 					
 					
 					$(() => {
-						$('.lazy').Lazy({
+						$('.lazy').filter(function() {
+							return !$(this).closest('.gallery-video-item').length;
+						}).Lazy({
 							visibleOnly: true,
 							afterLoad: element => element.css({filter: "none", transition: "filter 1.0s ease-in-out"})
 						});
@@ -1089,7 +1079,12 @@
 
 						
 						
-						$(entry).find("a").toggleClass("galleryImg", include);
+						$(entry).find("a").each(function() {
+							const $link = $(this);
+							const isVideoLink = $link.hasClass("gallery-video-link");
+							$link.toggleClass("galleryImg", include && !isVideoLink);
+							$link.toggleClass("galleryVideo", include && isVideoLink);
+						});
 
 						return include;
 					}
@@ -1192,11 +1187,6 @@
 						activateFilterButton(filterButton);
 
 						
-							
-							const params = new URLSearchParams(location.hash.replace(/^\#/,""));
-							params.set('gallery-filter', filterConfig.label);+
-							window.history.replaceState("", "", location.pathname + location.search + "#" + params.toString());
-						
 					});
 					filterBar.append(filterButton);
 
@@ -1224,50 +1214,58 @@
 	
    
 	
-
-
-	
-   
-	
 <section id="experience" class="section section--border-bottom rad-animation-group">
     <div class="container">
         <div class="row flex-column-reverse flex-md-row rad-fade-down">
             <div class="col-12 col-sm-6 mt-5 mt-sm-0">
                 
                 <div class="experience">
-                    <div class="experience__date">27. Juni 2024</div>
-                    <div class="experience__title">Kieler Woche</div>
-                    <div class="experience__company">abc <a href="https://www.kieler-woche.de/" target="_blank" rel="noopener noreferrer">Kieler Woche</a></div>
+                    <div class="experience__date"></div>
+                    <div class="experience__title">Thinking Out Loud</div>
+                    <div class="experience__company">Ed Sheeran</div>
+                    
+                    <div class="experience__audio mt-3">
+                        <audio controls preload="none" style="width: 100%; max-width: 100%;">
+                            <source src="http://localhost:1313/quickstart/img/thinkingoutloud.mp3" type="audio/mpeg">
+                            Dein Browser unterstützt kein HTML5-Audio.
+                        </audio>
+                    </div>
+                    
                 </div>
                 
                 <div class="experience">
-                    <div class="experience__date">16.07.-18.07.2024</div>
-                    <div class="experience__title">Bootshafen Sommer</div>
-                    <div class="experience__company">Textic</div>
-                </div>
-                
-                <div class="experience">
-                    <div class="experience__date">Jun 2009 - Mar 2010</div>
-                    <div class="experience__title">Frühstücksfernsehen</div>
-                    <div class="experience__company">Cyberse</div>
+                    <div class="experience__date"></div>
+                    <div class="experience__title">All of Me</div>
+                    <div class="experience__company">John Legend</div>
+                    
+                    <div class="experience__audio mt-3">
+                        <audio controls preload="none" style="width: 100%; max-width: 100%;">
+                            <source src="http://localhost:1313/quickstart/img/allofme.mp3" type="audio/mpeg">
+                            Dein Browser unterstützt kein HTML5-Audio.
+                        </audio>
+                    </div>
+                    
                 </div>
                 
             </div>
             <div class="col-12 col-sm-6">
-                <h2 class="experience__section-title">Öffentliche Auftritte</h2>
+                <h2 class="experience__section-title">Hörproben &amp; mehr</h2>
                 <p class="lead">
                     Hier kannst du mich live erleben. Ich singe auf Hochzeiten, Taufen, Geburtstagen, Jubiläen, Firmenfeiern und Beerdigungen. Ich singe auf Deutsch, Englisch und Italienisch. Ich freue mich auf Ihre Anfrage.
                 </p>
-                <a href="https://www.linkedin.com/company/radity/" class="btn btn-primary"
-                   target="_blank">
-                    <i class="icon-linkedin-fill"></i>
-                    Linkedin
-                    <i class="icon-arrow-right"></i></a>
-                <a href="http://localhost:1313/quickstart" class="btn btn-frameless"
-                   target="_blank">
-                    <i class="icon-profile-fill"></i>
-                    Download My Resume
-                </a>
+                
+                    
+                    <a href="http://localhost:1313/quickstart/img/songs_hochzeit.pdf" class="btn btn-primary"
+                       target="_blank">
+                        <i class="icon-profile-fill"></i>
+                        Beispiel Setlist
+                        <i class="icon-arrow-right"></i>
+                    </a>
+                    
+                
+                
+                    
+                
             </div>
         </div>
     </div>
@@ -1278,6 +1276,164 @@
 	
    
 	
+<section id="portfolio" class="section section--border-bottom">
+  <div class="container">
+    <h2 class="rad-animation-group rad-fade-down">
+      Videos
+    </h2>
+
+    
+    <div class="row row--padded rad-animation-group rad-fade-down ">
+      
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <div class="video-card">
+          <video controls preload="metadata" playsinline poster="http://localhost:1313/quickstart/img/nina-1.jpg">
+            <source src="http://localhost:1313/quickstart/img/ny_ny_teil1_hb.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>Live-Auftritt</h3>
+        <p class="lead">Kurzaufnahme aus einem Auftritt.</p>
+      </div>
+      
+    </div>
+    
+    <div class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row">
+      
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>Live-Auftritt</h3>
+        <p class="lead">Kurzaufnahme aus einem Auftritt.</p>
+      </div>
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <div class="video-card">
+          <video controls preload="metadata" playsinline poster="http://localhost:1313/quickstart/img/nina-1.jpg">
+            <source src="http://localhost:1313/quickstart/img/ny_ny_teil1_hb.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      
+    </div>
+    
+
+    
+
+    
+  </div>
+</section>
+
+
+
+	
+   
+	
+<section class="section section--border-bottom rad-animation-group">
+    <div class="container">
+        <div class="row rad-fade-down">
+            <div class="col-12">
+                <h2>Friends</h2>
+                <div class="row pt-2 pt-md-4">
+                    
+                    <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+                        <div class="education">
+                            
+                            <img class="education__logo" src="http://localhost:1313/quickstart/img/logo-hochzeitssaenger.png" alt="" aria-hidden="true">
+                            
+                            <div class="education__date"></div>
+                            <div class="education__title">Hochzeitssängerin</div>
+                            <div class="education__degree">
+                                Hochzeitssänger & Bands in Eurer Region finden! <a href="https://www.hochzeitssaengerin.de" target="_blank" rel="noopener noreferrer">Hochzeitssängerin</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+                        <div class="education">
+                            
+                            <img class="education__logo" src="http://localhost:1313/quickstart/img/logo-hochzeitssaenger.png" alt="" aria-hidden="true">
+                            
+                            <div class="education__date"></div>
+                            <div class="education__title">Sir John A Macdonald CI</div>
+                            <div class="education__degree">
+                                High School Diploma, Sciences, Math, Computer & Business Studies
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+	
+   
+	
+<section class="section rad-animation-group section--border-bottom">
+    <div class="container">
+        <h2 class="rad-fade-down">Testimonials</h2>
+        <div class="row row--padded mb-0 rad-fade-down">
+            
+            <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
+                <i class="icon-quote"></i>
+                <p>
+                    Cold calling can be a great way to generate quality leads. You get to speak to the gatekeepers and stakeholders, and you get a great insight into their requirements and influences. But cold calling is an art-form. It can be daunting, it’s always a lot of work, and you always need to make a good impression.
+                </p>
+                <div class="testimonial__author">
+                    <img class="lozad testimonial__author-image"
+                         src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                         data-src="http://localhost:1313/quickstart/img/testimonials/daniel-jordan.jpg"
+                         data-srcset="http://localhost:1313/quickstart/img/testimonials/daniel-jordan.jpg 1x, http://localhost:1313/quickstart/img/testimonials/daniel-jordan@2x.jpg 2x"
+                         alt="Daniel Jordan"/>
+                    <div class="testimonial__author-info">
+                        <h4>Daniel Jordan</h4>
+                        <span>Phonet, CEO</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
+                <i class="icon-quote"></i>
+                <p>
+                    Whether you or your loved one is encountering the natural decrease in mobility that occurs with the passing of time, or deals with an illness-related lack of physical agility, a stair lift can be the ideal way to put you in charge of your home again. Regardless of the shape or make of your living accommodation.
+                </p>
+                <div class="testimonial__author">
+                    <img class="lozad testimonial__author-image"
+                         src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                         data-src="http://localhost:1313/quickstart/img/testimonials/jonathan-peters.jpg"
+                         data-srcset="http://localhost:1313/quickstart/img/testimonials/jonathan-peters.jpg 1x, http://localhost:1313/quickstart/img/testimonials/jonathan-peters@2x.jpg 2x"
+                         alt="Jonathan Peters"/>
+                    <div class="testimonial__author-info">
+                        <h4>Jonathan Peters</h4>
+                        <span>Textic, CEO</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
+                <i class="icon-quote"></i>
+                <p>
+                    In this digital generation where information can be easily obtained within seconds, business cards still have retained their importance in the achievement of increased business exposure and business sales. If your business already has a bunch of printed cards distributed to a number of potential customers and yet.
+                </p>
+                <div class="testimonial__author">
+                    <img class="lozad testimonial__author-image"
+                         src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                         data-src="http://localhost:1313/quickstart/img/testimonials/antonio-willis.jpg"
+                         data-srcset="http://localhost:1313/quickstart/img/testimonials/antonio-willis.jpg 1x, http://localhost:1313/quickstart/img/testimonials/antonio-willis@2x.jpg 2x"
+                         alt="Antonio Willis"/>
+                    <div class="testimonial__author-info">
+                        <h4>Antonio Willis</h4>
+                        <span>Cyberse, CEO</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
 
 
 	

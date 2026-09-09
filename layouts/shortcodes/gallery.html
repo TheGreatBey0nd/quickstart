@@ -98,7 +98,45 @@ Ordinal: {{ .Ordinal}}
 <div id="{{ $galleryWrapperId }}" class="gallery-wrapper">
 <div id="{{ $galleryId }}" class="justified-gallery">
 	{{ range $original := sort $images "Name" $sortOrder}}
-		{{ if eq $original.ResourceType "image" }}
+		{{ if eq $original.ResourceType "video" }}
+			{{ $metaFileName := print $original.Name ".meta" }}
+			{{ $metadata := dict }}
+			{{ if and $globalMatch (not $localMatch) }}
+				{{ $metadata = resources.GetMatch ($metaFileName) }}
+			{{ else }}
+				{{ $metadata = $currentPage.Page.Resources.GetMatch ($metaFileName) }}
+			{{ end }}
+
+			{{ if $metadata }}
+				{{ $metadata = $metadata.Content | unmarshal }}
+			{{ end }}
+
+			{{ $poster := "" }}
+			{{ range $currentPage.Page.Resources }}
+				{{ if and (eq .ResourceType "image") (eq (path.BaseName .Name) (path.BaseName $original.Name)) }}
+					{{ $poster = . }}
+					{{ break }}
+				{{ end }}
+			{{ end }}
+
+			<div>
+				<div class="gallery-video-item">
+					<video
+						class="gallery-video-player"
+						controls
+						preload="metadata"
+						playsinline
+						{{ with $poster }}poster="{{ $poster.RelPermalink }}"{{ end }}
+						{{ if not (eq $filterOptions "[]") }}
+							data-meta="{{ (dict "Tags" $metadata.Tags "Rating" $metadata.Rating "ColorLabels" $metadata.ColorLabels "ImageDescription" $metadata.ImageDescription) | jsonify }}"
+						{{ end }}
+						aria-label="{{ $original.Title | default $original.Name }}"
+					>
+						<source src="{{ $original.RelPermalink }}" type="{{ $original.MediaType }}">
+					</video>
+				</div>
+			</div>
+		{{ else if eq $original.ResourceType "image" }}
 
 			{{/* Get metadata from sidecar file, if present. Else an empty dictionary is used. */}}
 			{{ $metaFileName := print $original.Name ".meta"}}
@@ -242,7 +280,9 @@ Ordinal: {{ .Ordinal}}
 					// if there is already some low resolution image data loaded, then we will wait for loading´
 					// the hi-res until the justified gallery has done the layout
 					$(() => {
-						$('.lazy').Lazy({
+						$('.lazy').filter(function() {
+							return !$(this).closest('.gallery-video-item').length;
+						}).Lazy({
 							visibleOnly: true,
 							afterLoad: element => element.css({filter: "none", transition: "filter 1.0s ease-in-out"})
 						});
@@ -291,7 +331,12 @@ Ordinal: {{ .Ordinal}}
 
 						// only those images visible in justified gallery should be displayed
 						// in swipebox (only <a> with class galleryImg are displayed in swipebox)
-						$(entry).find("a").toggleClass("galleryImg", include);
+						$(entry).find("a").each(function() {
+							const $link = $(this);
+							const isVideoLink = $link.hasClass("gallery-video-link");
+							$link.toggleClass("galleryImg", include && !isVideoLink);
+							$link.toggleClass("galleryVideo", include && isVideoLink);
+						});
 
 						return include;
 					}

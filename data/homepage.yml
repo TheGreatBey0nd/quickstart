@@ -49,117 +49,90 @@ about:
 
 # education
 education:
-  enable: false
-  title: "Education"
+  enable: true
+  title: "Friends"
   items:
-    - university: "University of Waterloo"
-      year: "2012-2017"
-      degree: "Bachelor of Applied Science (BASc), Electrical Engineering"
+    - university: "Hochzeitssängerin"
+      #year: "2012-2017"
+      degree: "Hochzeitssänger & Bands in Eurer Region finden! <a href=\"https://www.hochzeitssaengerin.de\" target=\"_blank\" rel=\"noopener noreferrer\">Hochzeitssängerin</a>"
+      logo: "img/logo-hochzeitssaenger.png"
 
     - university: "Sir John A Macdonald CI"
-      year: "2009-2012"
+      #year: "2009-2012"
       degree: "High School Diploma, Sciences, Math, Computer & Business Studies"
+      logo: "img/logo-hochzeitssaenger.png"
 
 # experience
 experience:
-  enable: false
-  title: "Öffentliche Auftritte"
+  enable: true
+  title: "Hörproben & mehr"
   description: "Hier kannst du mich live erleben. Ich singe auf Hochzeiten, Taufen, Geburtstagen, Jubiläen, Firmenfeiern und Beerdigungen. Ich singe auf Deutsch, Englisch und Italienisch. Ich freue mich auf Ihre Anfrage."
   button:
-    icon: "icon-linkedin-fill"
-    btnText: "Linkedin"
-    URL: "https://www.linkedin.com/company/radity/"
-  button2:
+    enable: true
     icon: "icon-profile-fill"
-    btnText: "Download My Resume"
-    URL: "#"
+    btnText: "Beispiel Setlist"
+    URL: "img/songs_hochzeit.pdf"
+  button2:
+    enable: false
+    icon: "icon-profile-fill"
+    btnText: "Setlist Beispiel"
+    URL: "img/songs_hochzeit.pdf"
 
   items:
-    - title: "Kieler Woche"
-      company: 'abc <a href="https://www.kieler-woche.de/" target="_blank" rel="noopener noreferrer">Kieler Woche</a>'
-      duration: "27. Juni 2024"
+    # - title: "Kieler Woche"
+    #   company: 'abc <a href="https://www.kieler-woche.de/" target="_blank" rel="noopener noreferrer">Kieler Woche</a>'
+    #   duration: "27. Juni 2024"
+    #   mp3: "/audio/kieler-woche.mp3"
 
-    - title: "Bootshafen Sommer"
-      company: "Textic"
-      duration: "16.07.-18.07.2024"
+    - title: "Thinking Out Loud"
+      company: "Ed Sheeran"
+      # duration: "16.07.-18.07.2024"
+      mp3: "img/thinkingoutloud.mp3"
 
-    - title: "Frühstücksfernsehen"
-      company: "Cyberse"
-      duration: "Jun 2009 - Mar 2010"
+    - title: "All of Me"
+      company: "John Legend"
+      # duration: "Jun 2009 - Mar 2010"
+      mp3: "img/allofme.mp3"
 
 # Client & Work
 client_and_work:
-  title: "Clients & Works"
-  enable: false
+  title: "Videos"
+  enable: true
 
-  clients:
-    - logo:
-        x: "img/clients/asgardia.png"
-        _2x: "img/clients/asgardia@2x.png"
-      alt: "Asgardia"
-
-    - logo:
-        x: "img/clients/earth-2.png"
-        _2x: "img/clients/earth-2@2x.png"
-      alt: "Earth 2.0"
-
-    - logo:
-        x: "img/clients/goldline.png"
-        _2x: "img/clients/goldline@2x.png"
-      alt: "Goldline"
-
-    - logo:
-        x: "img/clients/kanba.png"
-        _2x: "img/clients/kanba@2x.png"
-      alt: "Kanba"
-
-    - logo:
-        x: "img/clients/zoo-tv.png"
-        _2x: "img/clients/zoo-tv@2x.png"
-      alt: "Zoo"
-
-    - logo:
-        x: "img/clients/ztos.png"
-        _2x: "img/clients/ztos@2x.png"
-      alt: "Ztos"
-
-  works:
-    - title: "Radity Finance - UI Kit"
-      description: "We have been receiving a lot of requests for a Finance Kit recently due to the popularity of Fintech."
-      button:
-        icon: "icon-arrow-right"
-        btnText: "Case Study"
-        URL: "#"
-      image:
-        x: "img/works/radity-finance.jpg"
-        _2x: "img/works/radity-finance@2x.jpg"
-      is_even: true
-
-    - title: "Swiss Fintech Website"
-      description: "The Swiss Finance + Technology Association is the leading FinTech hub in Switzerland."
-      button:
-        icon: "icon-arrow-right"
-        btnText: "Case Study"
-        URL: "#"
-      image:
-        x: "img/works/swissfintech.jpg"
-        _2x: "img/works/swissfintech@2x.jpg"
+  videos:
+    - title: "Live-Auftritt"
+      description: "Kurzaufnahme aus einem Auftritt."
+      src: "img/ny_ny_teil1_hb.mp4"
+      poster: "img/nina-1.jpg"
       is_even: false
-
-    - title: "Robo Advisor"
-      description: "Robo Advisor is a Swiss Wealth Manager and wants to create the best digital experience for its UNHW clients across the world. We started with a whiteboard."
-      button:
-        icon: "icon-arrow-right"
-        btnText: "Case Study"
-        URL: "#"
-      image:
-        x: "img/works/robo-advisor.jpg"
-        _2x: "img/works/robo-advisor@2x.jpg"
+    - title: "Live-Auftritt"
+      description: "Kurzaufnahme aus einem Auftritt."
+      src: "img/ny_ny_teil1_hb.mp4"
+      poster: "img/nina-1.jpg"
       is_even: true
+
+  # clients:
+  #   - logo:
+  #       x: "img/logo-hochzeitssaenger.png"
+  #       _2x: "img/logo-hochzeitssaenger-mobile.png"
+  #     alt: "Asgardia"
+
+
+  # works:
+  #   - title: "Radity Finance - UI Kit"
+  #     description: "We have been receiving a lot of requests for a Finance Kit recently due to the popularity of Fintech."
+  #     button:
+  #       icon: "icon-arrow-right"
+  #       btnText: "Case Study"
+  #       URL: "#"
+  #     image:
+  #       x: "img/works/radity-finance.jpg"
+  #       _2x: "img/works/radity-finance@2x.jpg"
+  #     is_even: true
 
 # testimonial
 testimonial:
-  enable: false
+  enable: true
   title: "Testimonials"
   items:
     - name: "Daniel Jordan"

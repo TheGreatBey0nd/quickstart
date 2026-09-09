@@ -64,7 +64,7 @@ theme = ["radity", "hugo-shortcode-gallery"]
 
 [params]
 
-  sections = ["showcase", "client-and-work", "about", "gallery", "education",  "experience", "testimonial", "contact", "newsletter"]
+  sections = ["showcase", "about", "gallery", "experience", "client-and-work", "education", "testimonial", "contact", "newsletter"]
 
   [params.logo]
     text1 = "Just"
