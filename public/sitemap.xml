@@ -2,16 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/quickstart/</loc>
+    <loc>https://thegreatbey0nd.github.io/quickstart/</loc>
   </url><url>
-    <loc>http://localhost:1313/quickstart/gallery/</loc>
+    <loc>https://thegreatbey0nd.github.io/quickstart/gallery/</loc>
   </url><url>
-    <loc>http://localhost:1313/quickstart/categories/</loc>
+    <loc>https://thegreatbey0nd.github.io/quickstart/datenschutz/</loc>
   </url><url>
-    <loc>http://localhost:1313/quickstart/datenschutz/</loc>
-  </url><url>
-    <loc>http://localhost:1313/quickstart/impressum/</loc>
-  </url><url>
-    <loc>http://localhost:1313/quickstart/tags/</loc>
+    <loc>https://thegreatbey0nd.github.io/quickstart/impressum/</loc>
   </url>
 </urlset>

@@ -1,6 +1,7 @@
 baseURL = "https://thegreatbey0nd.github.io/quickstart/"
-languageCode = "en-us"
+locale = "en-us"
 theme = ["radity", "hugo-shortcode-gallery"]
+disableKinds = ["taxonomy", "term"]
 
 # Gallery-Konfiguration
 [imaging.meta]

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title></title>
-		<link>http://localhost:1313/quickstart/</link>
+		<link>https://thegreatbey0nd.github.io/quickstart/</link>
 		<description>Recent content on </description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -10,19 +10,19 @@
 		
 		
 		
-			<atom:link href="http://localhost:1313/quickstart/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://thegreatbey0nd.github.io/quickstart/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Datenschutzerklärung</title>
-				<link>http://localhost:1313/quickstart/datenschutz/</link>
+				<link>https://thegreatbey0nd.github.io/quickstart/datenschutz/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/quickstart/datenschutz/</guid>
+				<guid>https://thegreatbey0nd.github.io/quickstart/datenschutz/</guid>
 				<description>&lt;h2 id=&#34;1-datenschutz-auf-einen-blick&#34;&gt;1. Datenschutz auf einen Blick&lt;/h2&gt;&#xA;&lt;h3 id=&#34;allgemeine-hinweise&#34;&gt;Allgemeine Hinweise&lt;/h3&gt;&#xA;&lt;p&gt;Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.&lt;/p&gt;&#xA;&lt;h3 id=&#34;datenerfassung-auf-unserer-website&#34;&gt;Datenerfassung auf unserer Website&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Wer ist verantwortlich für die Datenerfassung auf dieser Website?&lt;/strong&gt;&lt;br&gt;&#xA;Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Wie erfassen wir Ihre Daten?&lt;/strong&gt;&lt;br&gt;&#xA;Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben. Andere Daten werden automatisch beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs).&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Impressum</title>
-				<link>http://localhost:1313/quickstart/impressum/</link>
+				<link>https://thegreatbey0nd.github.io/quickstart/impressum/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/quickstart/impressum/</guid>
+				<guid>https://thegreatbey0nd.github.io/quickstart/impressum/</guid>
 				<description>&lt;h2 id=&#34;angaben-gemäß--5-tmg&#34;&gt;Angaben gemäß § 5 TMG&lt;/h2&gt;&#xA;&lt;p&gt;Nina Mustermann&lt;br&gt;&#xA;Musterstraße 1&lt;br&gt;&#xA;12345 Musterstadt&lt;/p&gt;&#xA;&lt;h2 id=&#34;kontakt&#34;&gt;Kontakt&lt;/h2&gt;&#xA;&lt;p&gt;Telefon: +49 (0) 123 456789&lt;br&gt;&#xA;E-Mail: &lt;a href=&#34;mailto:info@beispiel.de&#34;&gt;info@beispiel.de&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;redaktionell-verantwortlich&#34;&gt;Redaktionell verantwortlich&lt;/h2&gt;&#xA;&lt;p&gt;Nina Mustermann&lt;br&gt;&#xA;Musterstraße 1&lt;br&gt;&#xA;12345 Musterstadt&lt;/p&gt;&#xA;&lt;h2 id=&#34;eu-streitschlichtung&#34;&gt;EU-Streitschlichtung&lt;/h2&gt;&#xA;&lt;p&gt;Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: &lt;a href=&#34;https://ec.europa.eu/consumers/odr/&#34;&gt;https://ec.europa.eu/consumers/odr/&lt;/a&gt;.&lt;br&gt;&#xA;Unsere E-Mail-Adresse finden Sie oben im Impressum.&lt;/p&gt;&#xA;&lt;h2 id=&#34;verbraucherstreitbeilegunguniversalschlichtungsstelle&#34;&gt;Verbraucherstreitbeilegung/Universalschlichtungsstelle&lt;/h2&gt;&#xA;&lt;p&gt;Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.&lt;/p&gt;</description>
 			</item>
 	</channel>

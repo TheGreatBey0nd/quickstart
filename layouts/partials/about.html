@@ -1,4 +1,4 @@
-{{ if .Site.Data.homepage.about.enable }}
+{{ if hugo.Data.homepage.about.enable }}
 <section class="section rad-animation-group pb-0" id="about">
   <div class="container rad-fade-down">
     <div class="row d-flex flex-column-reverse flex-md-row">
@@ -6,17 +6,17 @@
         <img
           class="lozad img-responsive image-left-overflow"
           src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-          data-src="{{ .Site.Data.homepage.about.image.x | absURL }}"
-          data-srcset="{{ .Site.Data.homepage.about.image.x | absURL }} 1x, {{ .Site.Data.homepage.about.image._2x | absURL }} 2x"
+          data-src="{{ hugo.Data.homepage.about.image.x | absURL }}"
+          data-srcset="{{ hugo.Data.homepage.about.image.x | absURL }} 1x, {{ hugo.Data.homepage.about.image._2x | absURL }} 2x"
           alt="Profile Picture"
         />
       </div>
       <div class="col-12 col-md-6 my-auto my-auto">
-        <h2 class="about__title">{{ .Site.Data.homepage.about.title }}</h2>
+        <h2 class="about__title">{{ hugo.Data.homepage.about.title }}</h2>
         <p class="lead">
-          {{ .Site.Data.homepage.about.content | safeHTML }}
+          {{ hugo.Data.homepage.about.content | safeHTML }}
         </p>
-        {{ with .Site.Data.homepage.about.button }}
+        {{ with hugo.Data.homepage.about.button }}
           {{ if or (not (isset . "enable")) .enable }}
           <a
             href="{{ .URL | absURL }}"
