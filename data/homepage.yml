@@ -1,7 +1,7 @@
 # homepage
 homepage:
   head:
-    title: "Hoxxxxxxxme | Raditian"
+    title: "Just Nina | Sängerin für Ihren Anlass"
 # showcase
 showcase:
   enable: true
@@ -51,7 +51,7 @@ about:
 # education
 education:
   enable: true
-  title: "Friends"
+  title: "Aus meinem Sängerkreis"
   items:
     - university: "Hochzeitssängerin"
       #year: "2012-2017"
@@ -134,7 +134,7 @@ client_and_work:
 # testimonial
 testimonial:
   enable: true
-  title: "Testimonials"
+  title: "Was mein Publikum sagt ..."
   items:
     - name: "Daniel Jordan"
       position: "Phonet, CEO"

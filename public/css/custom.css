@@ -28,15 +28,6 @@
   padding-bottom: 20px !important;
 }
 
-#about .about__profile-picture {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-#about .about__profile-picture img.image-left-overflow {
-  margin-left: 0;
-}
-
 /* swipebox docks prev/next arrows in a bottom bar by default; keep that bar always
    in place so its transform doesn't shift the fixed-positioned arrows below */
 #swipebox-bottom-bar {

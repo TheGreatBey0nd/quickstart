@@ -73,6 +73,6 @@ theme = ["radity", "hugo-shortcode-gallery"]
   [params.footer]
       copyright = "thegreatbey0nd"
       [params.footer.radity_logo]
-        x = "img/justnina-logo.jpg"
-        _2x = "img/justnina-logo.jpg"
+        x = "img/logo.jpg"
+        _2x = "img/logo.jpg"
         alt = "Design & Code - Radity"
