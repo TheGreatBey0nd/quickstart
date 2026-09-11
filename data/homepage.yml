@@ -55,7 +55,7 @@ education:
   items:
     - university: "Hochzeitssängerin"
       #year: "2012-2017"
-      degree: "Hochzeitssänger & Bands in Eurer Region finden! <a href=\"https://www.hochzeitssaengerin.de\" target=\"_blank\" rel=\"noopener noreferrer\">Hochzeitssängerin</a>"
+      degree: "Hochzeitssänger & Bands in Eurer Region finden! <a href=\"https://www.hochzeitssaengerin.org\" target=\"_blank\" rel=\"noopener noreferrer\">Hochzeitssängerin</a>"
       logo: "img/logo-hochzeitssaenger.png"
 
     - university: "Sir John A Macdonald CI"
