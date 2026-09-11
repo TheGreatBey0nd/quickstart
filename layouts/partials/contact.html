@@ -5,21 +5,21 @@
             <h2 class="contact__section-title">{{ .Site.Data.homepage.contact.title }}</h2>
             <div class="row pt-2">
                 <div class="col-12 col-lg-7">
-                    <form action="{{ .Site.Data.homepage.contact.form.action }}" method="{{ .Site.Data.homepage.contact.form.method }}">
+                    <form id="contact-form" action="{{ .Site.Data.homepage.contact.form.action }}" method="{{ .Site.Data.homepage.contact.form.method }}"{{ with .Site.Data.homepage.contact.emailjs }}{{ if .enable }} data-emailjs-enabled="true" data-emailjs-service-id="{{ .service_id }}" data-emailjs-template-id="{{ .template_id }}" data-emailjs-public-key="{{ .public_key }}"{{ end }}{{ end }}>
                         <div class="row">
                             <div class="col-12 col-sm-6">
-                                <input type="text" name="" id="full_name"
-                                       placeholder="{{ .Site.Data.homepage.contact.form.full_name }}"/>
+                                <input type="text" name="from_name" id="full_name"
+                                       placeholder="{{ .Site.Data.homepage.contact.form.full_name }}" required/>
                             </div>
                             <div class="col-12 col-sm-6">
-                                <input type="text" name="" id="email"
-                                       placeholder="{{ .Site.Data.homepage.contact.form.email }}"/>
+                                <input type="email" name="reply_to" id="email"
+                                       placeholder="{{ .Site.Data.homepage.contact.form.email }}" required/>
                             </div>
                         </div>
                         <div class="row pt-4">
                             <div class="col-12">
-                                <textarea name="" id="message"
-                                          cols="30" rows="3" placeholder="{{ .Site.Data.homepage.contact.form.message }}"></textarea>
+                                <textarea name="message" id="message"
+                                          cols="30" rows="3" placeholder="{{ .Site.Data.homepage.contact.form.message }}" required></textarea>
                             </div>
                         </div>
                         <div class="row pt-4">
@@ -30,6 +30,7 @@
                                 </button>
                             </div>
                         </div>
+                        <p class="contact__form-status" role="status" aria-live="polite"></p>
                     </form>
                 </div>
                 <div class="col-12 col-lg-5 contact__info">
@@ -44,4 +45,10 @@
         </div>
     </div>
 </section>
+{{ with .Site.Data.homepage.contact.emailjs }}
+{{ if .enable }}
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="{{ "js/emailjs-contact.js" | absURL }}"></script>
+{{ end }}
+{{ end }}
 {{ end }}

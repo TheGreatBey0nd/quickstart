@@ -167,6 +167,11 @@ contact:
     full_name: "Name"
     email: "Email Address"
     message: "Deine Nachricht"
+  emailjs:
+    enable: true
+    service_id: "service_uwq13x6"
+    template_id: "template_89snsyz"
+    public_key: "Y5gvJIO6Pr6cS85OG"
   phone:
     title: "Telefon"
     number: "0176 123 456 78"
