@@ -47,19 +47,14 @@ theme = ["radity", "hugo-shortcode-gallery"]
 
 
   [[menu.footer]]
-  name = "About"
-  URL = "#about"
+  name = "Impressum"
+  URL = "impressum/"
+  weight = 1
+
+  [[menu.footer]]
+  name = "Datenschutz"
+  URL = "datenschutz/"
   weight = 2
-
-  [[menu.footer]]
-  name = "Portfolio"
-  URL = "#portfolio"
-  weight = 3
-
-  [[menu.footer]]
-  name = "Contact"
-  URL = "#contact"
-  weight = 4
 
 
 [params]

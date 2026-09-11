@@ -1,9 +1,18 @@
 <footer class="footer">
-  <div class="container d-flex justify-content-between align-items-center">
-    <div class="footer__left">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <div class="footer__left mb-2 mb-md-0">
       <div class="footer__copy">
         {{ .Site.Params.footer.copyright }}
       </div>
+    </div>
+    <div class="footer__links mb-2 mb-md-0">
+      <ul class="navbar-nav flex-row">
+        {{ range .Site.Menus.footer }}
+        <li class="nav-item mx-2">
+          <a class="nav-link p-0 text-white-50" href="{{ .URL | relURL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+      </ul>
     </div>
     <div class="footer__right">
       <a href="{{ .Site.BaseURL | absURL }}"

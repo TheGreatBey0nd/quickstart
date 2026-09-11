@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head><script src="/quickstart/livereload.js?mindelay=10&amp;v=2&amp;port=64095&amp;path=quickstart/livereload" data-no-instant defer></script>
+    <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+<title>Just Nina | Sängerin für Ihren Anlass</title>
+<style>
+     
+    .rad-fade-in {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in.rad-animate {
+        animation-name: rad-fade-in;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+     
+    .rad-fade-in-long {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-long-fallback;
+        animation-duration: 8s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long-fallback {
+        0% { opacity: 0; }
+        75% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-animate {
+        animation-name: rad-fade-in-long;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long {
+        0% { opacity: 0; }
+        20% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+     
+    .rad-fade-down {
+        will-change: opacity, transform;
+        animation-name: rad-fade-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform: translateY(-30px);
+    }
+
+    @keyframes rad-fade-down-fallback {
+        0% { opacity: 0; transform: translateY(-30px); }
+        75% { opacity: 0; transform: translateY(-30px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .fonts-loaded .rad-fade-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    .fonts-loaded .rad-fade-down.rad-animate {
+        animation-name: rad-fade-down;
+        animation-duration: 1.1s;
+    }
+
+    @keyframes rad-fade-down {
+        0% { opacity: 0; transform: translateY(-30px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+
+     
+    .rad-scale-down {
+        will-change: opacity, transform;
+        animation-name: rad-scale-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform-origin: 50% 0;
+    }
+
+    @keyframes rad-scale-down-fallback {
+        0% { opacity: 0; transform: scaleY(0.95); }
+        75% { opacity: 0; transform: scaleY(0.95); }
+        100% { opacity: 1; transform: scaleY(1); }
+    }
+
+    .fonts-loaded .rad-scale-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: scaleY(0.95);
+    }
+
+    .fonts-loaded .rad-scale-down.rad-animate {
+        animation-name: rad-scale-down;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-scale-down {
+        0% { opacity: 0; transform: scaleY(0.95); }
+        100% { opacity: 1; transform: scaleY(1); }
+    }
+</style>
+
+<link rel="stylesheet" href="http://localhost:64095/quickstart/css/main.css"/>
+
+<link rel="stylesheet" href="http://localhost:64095/quickstart/css/rad-icons.css"/>
+
+<link rel="stylesheet" href="http://localhost:64095/quickstart/css/custom.css"/>
+
+
+    
+
+</head>
+
+<body>
+    <header class="header fixed-top rad-animation-group" id="header">
+  <div class="container rad-fade-in">
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
+      <a class="navbar-brand" href="http://localhost:64095/quickstart/" aria-label="">
+        <img
+          src="http://localhost:64095/quickstart/img/Logo.jpg"
+          alt=""
+          class="header__logo-image"
+          style="max-height: 42px; width: auto;"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent, #header"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:64095/quickstart/">HOME</a>
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#about"
+              >ÜBER MICH</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#gallery"
+              >MUSIK</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#contact"
+              >KONTAKT</a
+            >
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+    <main class="container section" style="padding-top: 150px; padding-bottom: 80px;">
+        <div class="row">
+            <div class="col-12 col-lg-10 offset-lg-1">
+                <h1 class="mb-4">Datenschutzerklärung</h1>
+                <div class="content">
+                    <h2 id="1-datenschutz-auf-einen-blick">1. Datenschutz auf einen Blick</h2>
+<h3 id="allgemeine-hinweise">Allgemeine Hinweise</h3>
+<p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.</p>
+<h3 id="datenerfassung-auf-unserer-website">Datenerfassung auf unserer Website</h3>
+<p><strong>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</strong><br>
+Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.</p>
+<p><strong>Wie erfassen wir Ihre Daten?</strong><br>
+Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben. Andere Daten werden automatisch beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs).</p>
+<h2 id="2-hosting">2. Hosting</h2>
+<p>Wir hosten die Inhalte unserer Website bei folgendem Anbieter:</p>
+<h3 id="github-pages">GitHub Pages</h3>
+<p>Anbieter ist die GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA (nachfolgend GitHub).</p>
+<p>Wenn Sie unsere Website besuchen, erfasst GitHub verschiedene Logfiles inklusive Ihrer IP-Adressen. Details entnehmen Sie der Datenschutzerklärung von GitHub: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement</a>.</p>
+<h2 id="3-allgemeine-hinweise-und-pflichtinformationen">3. Allgemeine Hinweise und Pflichtinformationen</h2>
+<h3 id="datenschutz">Datenschutz</h3>
+<p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p>
+<h3 id="hinweis-zur-verantwortlichen-stelle">Hinweis zur verantwortlichen Stelle</h3>
+<p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
+<p>Nina Mustermann<br>
+Musterstraße 1<br>
+12345 Musterstadt</p>
+<p>Telefon: +49 (0) 123 456789<br>
+E-Mail: <a href="mailto:info@beispiel.de">info@beispiel.de</a></p>
+<h3 id="widerruf-ihrer-einwilligung-zur-datenverarbeitung">Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3>
+<p>Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.</p>
+<h3 id="recht-auf-auskunft-löschung-und-berichtigung">Recht auf Auskunft, Löschung und Berichtigung</h3>
+<p>Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten.</p>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <div class="footer__left mb-2 mb-md-0">
+      <div class="footer__copy">
+        thegreatbey0nd
+      </div>
+    </div>
+    <div class="footer__links mb-2 mb-md-0">
+      <ul class="navbar-nav flex-row">
+        
+        <li class="nav-item mx-2">
+          <a class="nav-link p-0 text-white-50" href="/quickstart/impressum/">Impressum</a>
+        </li>
+        
+        <li class="nav-item mx-2">
+          <a class="nav-link p-0 text-white-50" href="/quickstart/datenschutz/">Datenschutz</a>
+        </li>
+        
+      </ul>
+    </div>
+    <div class="footer__right">
+      <a href="http://localhost:64095/quickstart/"
+        ><img
+          src="http://localhost:64095/quickstart/img/logo.jpg"
+          srcset="http://localhost:64095/quickstart/img/logo.jpg 1x, http://localhost:64095/quickstart/img/logo.jpg 2x"
+          alt="Design &amp; Code - Radity"
+      /></a>
+    </div>
+  </div>
+</footer>
+
+    <script src='http://localhost:64095/quickstart/js/rad-animations.js'></script>
+<script src='http://localhost:64095/quickstart/js/library/lozad.min.js'></script>
+<script>
+  window.addEventListener("load", function() {
+    var observer = window.lozad(".lozad", {
+      rootMargin: window.innerHeight / 2 + "px 0px",
+      threshold: 0.01
+    }); 
+    observer.observe();
+  });
+</script>
+<script src='http://localhost:64095/quickstart/js/library/jquery-3.3.1.slim.min.js'></script>
+<script src='http://localhost:64095/quickstart/js/library/bootstrap.min.js'></script>
+<script src='http://localhost:64095/quickstart/js/sticky-header.js'></script>
+<script src='http://localhost:64095/quickstart/js/library/smooth-scroll.polyfills.min.js'></script>
+<script src='http://localhost:64095/quickstart/js/library/fontfaceobserver.js'></script>
+<script>
+  (function(w) {
+    
+    if (w.document.documentElement.className.indexOf("fonts-loaded") > -1) {
+      return;
+    }
+    var fontA = new w.FontFaceObserver("Inter", {
+      weight: 300
+    });
+    var fontB = new w.FontFaceObserver("Inter", {
+      weight: 400
+    });
+    var fontC = new w.FontFaceObserver("Inter", {
+      weight: 500
+    });
+    var fontD = new w.FontFaceObserver("Inter", {
+      weight: 600
+    });
+    var fontE = new w.FontFaceObserver("Inter", {
+      weight: 700
+    });
+    var fontF = new w.FontFaceObserver("Inter", {
+      weight: 900
+    });
+    w.Promise.all([fontA.load(), fontC.load(), fontF.load()]).then(function() {
+      w.document.documentElement.className += " fonts-loaded";
+    });
+  })(this);
+</script>
+<script>
+  const scroll = new SmoothScroll('a[href*="#"]');
+    $('a.nav-link').on('click', () => {
+      const navbar = $('.navbar-collapse');
+      if (navbar && navbar.hasClass('show')) {
+        $('.navbar-toggler').click();
+      }
+    })
+</script>
+
+</body>
+
+</html>
