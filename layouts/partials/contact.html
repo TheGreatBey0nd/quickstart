@@ -22,24 +22,14 @@
                                           cols="30" rows="3" placeholder="{{ hugo.Data.homepage.contact.form.message }}" required></textarea>
                             </div>
                         </div>
-                        <div class="row pt-4">
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="{{ hugo.Data.homepage.contact.button.icon }}"></i>
-                                    {{ hugo.Data.homepage.contact.button.btnText }}
-                                </button>
-                            </div>
-                        </div>
                         <p class="contact__form-status" role="status" aria-live="polite"></p>
                     </form>
                 </div>
                 <div class="col-12 col-lg-5 contact__info">
-                    <h4>{{ hugo.Data.homepage.contact.phone.title }}</h4>
-                    <span>{{ hugo.Data.homepage.contact.phone.number }}</span>
-                    <h4>{{ hugo.Data.homepage.contact.email.title }}</h4>
-                    <span>{{ hugo.Data.homepage.contact.email.email | safeHTML }}</span>
-                    <h4>{{ hugo.Data.homepage.contact.address.title }}</h4>
-                    <span>{{ hugo.Data.homepage.contact.address.address | safeHTML }}</span>
+                    <button type="submit" form="contact-form" class="btn btn-primary contact__submit-button">
+                        <i class="{{ hugo.Data.homepage.contact.button.icon }}"></i>
+                        {{ hugo.Data.homepage.contact.button.btnText }}
+                    </button>
                 </div>
             </div>
         </div>

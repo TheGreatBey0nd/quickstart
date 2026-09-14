@@ -23,11 +23,8 @@ showcase:
     URL: "#contact"
 
   socialLinks:
-    - icon: "linkedin"
-      URL: "https://www.linkedin.com/"
-
-    - icon: "github"
-      URL: "https://github.com/"
+    - icon: "instagram"
+      URL: "https://www.instagram.com/justnina_saengerin_sh"
 
 # about
 about:
@@ -71,13 +68,13 @@ experience:
   button:
     enable: true
     icon: "icon-profile-fill"
-    btnText: "Beispiel Setlist"
-    URL: "img/songs_hochzeit.pdf"
+    btnText: "Setlist Hochzeit"
+    URL: "songs_hochzeit.pdf"
   button2:
-    enable: false
+    enable: true
     icon: "icon-profile-fill"
-    btnText: "Setlist Beispiel"
-    URL: "img/songs_hochzeit.pdf"
+    btnText: "Setlist Sonstige"
+    URL: "songs_sonstige.pdf"
 
   items:
     # - title: "Kieler Woche"
@@ -101,17 +98,31 @@ client_and_work:
   enable: true
 
   videos:
-    - title: "Live-Auftritt"
+    - title: "Kieler Woche"
       description: "Kurzaufnahme aus einem Auftritt."
-      src: "img/ny_ny_teil1_hb.mp4"
+      src: "video/kiwo-3.mp4"
       poster: "img/nina-1.jpg"
       is_even: false
-    - title: "Live-Auftritt"
-      description: "Kurzaufnahme aus einem Auftritt."
-      src: "img/ny_ny_teil1_hb.mp4"
+    - title: "Magic 25"
+      description: "Magic 25 Auftritt."
+      src: "video/magic-1.mp4"
       poster: "img/nina-1.jpg"
       is_even: true
-
+    - title: "Orchester MZAD"
+      description: "Auftritt mit dem Orchester MZAD."
+      src: "video/mzad-3.mp4"
+      poster: "img/nina-1.jpg"
+      is_even: false
+    - #title: "Orchester MZAD"
+      #description: "Auftritt mit dem Orchester MZAD."
+      src: "video/mzad-4.mp4"
+      poster: "img/nina-1.jpg"
+      is_even: false
+    - title: "Duo"
+      description: "Duo mit Bolenne"
+      src: "video/duo-1.mp4"
+      poster: "img/nina-1.jpg"
+      is_even: true
   # clients:
   #   - logo:
   #       x: "img/logo-hochzeitssaenger.png"

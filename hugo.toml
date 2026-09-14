@@ -67,8 +67,8 @@ disableKinds = ["taxonomy", "term"]
     text2 = "Nina"
 
   [params.footer]
-      copyright = "thegreatbey0nd"
+      #copyright = "thegreatbey0nd"
       [params.footer.radity_logo]
-        x = "img/logo.jpg"
-        _2x = "img/logo.jpg"
-        alt = "Design & Code - Radity"
+      #  x = "img/logo.jpg"
+      #  _2x = "img/logo.jpg"
+      #  alt = "Design & Code - Radity"
