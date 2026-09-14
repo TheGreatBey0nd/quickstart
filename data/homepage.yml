@@ -19,7 +19,7 @@ showcase:
 
   button:
     icon: "icon-mail-fill"
-    btnText: "Contact"
+    btnText: "Kontakt"
     URL: "#contact"
 
   socialLinks:
