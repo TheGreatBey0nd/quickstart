@@ -101,27 +101,37 @@ client_and_work:
     - title: "Kieler Woche"
       description: "Kurzaufnahme aus einem Auftritt."
       src: "video/kiwo-3.mp4"
-      poster: "img/nina-1.jpg"
+      poster: "video/kiwo-3.png"
+      width: "50%"
+      height: "auto"
       is_even: false
     - title: "Magic 25"
       description: "Magic 25 Auftritt."
       src: "video/magic-1.mp4"
-      poster: "img/nina-1.jpg"
+      poster: "video/magic-1.png"
+      width: "50%"
+      height: "auto"
       is_even: true
     - title: "Orchester MZAD"
       description: "Auftritt mit dem Orchester MZAD."
       src: "video/mzad-3.mp4"
       poster: "img/nina-1.jpg"
+      width: "100%"
+      height: "auto"
       is_even: false
     - #title: "Orchester MZAD"
       #description: "Auftritt mit dem Orchester MZAD."
       src: "video/mzad-4.mp4"
       poster: "img/nina-1.jpg"
+      width: "100%"
+      height: "auto"
       is_even: false
     - title: "Duo"
       description: "Duo mit Bolenne"
       src: "video/duo-1.mp4"
       poster: "img/nina-1.jpg"
+      width: "100%"
+      height: "auto"
       is_even: true
   # clients:
   #   - logo:

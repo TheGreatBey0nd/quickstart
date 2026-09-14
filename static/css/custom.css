@@ -111,6 +111,8 @@
 .video-card video {
   width: 100%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 8px;
   display: block;
   background: #000;
