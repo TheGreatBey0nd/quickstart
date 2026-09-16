@@ -48,33 +48,50 @@ about:
 # education
 education:
   enable: true
-  title: "Aus meinem Sängerkreis"
+  title: "Netzwerk und Herzensempfehlungen"
   items:
     - university: "Hochzeitssängerin"
       #year: "2012-2017"
-      degree: "Hochzeitssänger & Bands in Eurer Region finden! <a href=\"https://www.hochzeitssaengerin.org\" target=\"_blank\" rel=\"noopener noreferrer\">Hochzeitssängerin</a>"
+      degree: "Hochzeitssänger & Bands in Eurer Region finden!</br><a href=\"https://www.hochzeitssaengerin.org\" target=\"_blank\" rel=\"noopener noreferrer\">Hochzeitssängerin</a>"
       logo: "img/logo-hochzeitssaenger.png"
 
-    - university: "Sir John A Macdonald CI"
+    - university: "DJ Dennis Petersen"
       #year: "2009-2012"
-      degree: "High School Diploma, Sciences, Math, Computer & Business Studies"
-      logo: "img/logo-hochzeitssaenger.png"
+      degree: "Der Mann für alle Fälle <br/><a href=\"https://top-dj-kiel.de\" target=\"_blank\" rel=\"noopener noreferrer\">top-dj-kiel.de</a>"
+      logo: "img/logo-top-dj.jpg"
+
+    - university: "Florale Konzepte & Eventdesign"
+      #year: "2009-2012"
+      degree: "stimmig - persönlich - durchdacht<br/><a href=\"https://www.noeundeve-eventdekoration.de\" target=\"_blank\" rel=\"noopener noreferrer\">noeundeve-eventdekoration.de</a>"
+      logo: "img/logo-flora2.jpg"
 
 # experience
 experience:
   enable: true
   title: "Hörproben & mehr"
   description: "Hier kannst du mich live erleben. Ich singe auf Hochzeiten, Taufen, Geburtstagen, Jubiläen, Firmenfeiern und Beerdigungen. Ich singe auf Deutsch, Englisch und Italienisch. Ich freue mich auf Ihre Anfrage."
+  buttonBackground: "white"
   button:
     enable: true
     icon: "icon-profile-fill"
-    btnText: "Setlist Hochzeit"
-    URL: "songs_hochzeit.pdf"
+    btnText: " Hochzeit "
+    URL: "songs-hochzeit.pdf"
   button2:
     enable: true
     icon: "icon-profile-fill"
-    btnText: "Setlist Sonstige"
-    URL: "songs_sonstige.pdf"
+    btnText: " Empfang "
+    URL: "songs-empfang.pdf"
+  button3:
+    enable: true
+    icon: "icon-profile-fill"
+    btnText: " Taufe "
+    URL: "songs-taufe.pdf"
+  button4:
+    enable: true
+    icon: "icon-profile-fill"
+    btnText: " Abschied "
+    URL: "songs-abschied.pdf"
+    
 
   items:
     # - title: "Kieler Woche"
@@ -85,12 +102,28 @@ experience:
     - title: "Thinking Out Loud"
       company: "Ed Sheeran"
       # duration: "16.07.-18.07.2024"
-      mp3: "img/thinkingoutloud.mp3"
+      mp3: "audio/thinkingoutloud.mp3"
 
     - title: "All of Me"
       company: "John Legend"
       # duration: "Jun 2009 - Mar 2010"
-      mp3: "img/allofme.mp3"
+      mp3: "audio/allofme.mp3"
+
+    - title: "Luftballon"
+      company: "Helene Fischer"
+      # duration: "Jun 2009 - Mar 2010"
+      mp3: "audio/luftballon-2.wav"
+
+    - title: "Der Ewige Kreis"
+      company: "König der Löwen"
+      # duration: "Jun 2009 - Mar 2010"
+      mp3: "audio/derewigekreis-2.wav"
+
+    - title: "Wir wünschen Dir Liebe"
+      company: "Sunny Dale"
+      # duration: "Jun 2009 - Mar 2010"
+      mp3: "audio/wirwuenschendirliebe-2.wav"
+
 
 # Client & Work
 client_and_work:

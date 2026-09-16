@@ -24,25 +24,18 @@
                 <p class="lead">
                     {{ hugo.Data.homepage.experience.description }}
                 </p>
-                {{ with hugo.Data.homepage.experience.button }}
-                    {{ if or (not (isset . "enable")) .enable }}
-                    <a href="{{ .URL | absURL }}" class="btn btn-primary"
-                       target="_blank">
-                        <i class="{{ .icon }}"></i>
-                        {{ .btnText }}
-                        <i class="icon-arrow-right"></i>
-                    </a>
+                {{ $buttonBackground := default "black" hugo.Data.homepage.experience.buttonBackground }}
+                <div class="experience__buttons experience__buttons--{{ $buttonBackground }}">
+                    {{ range $index, $button := slice hugo.Data.homepage.experience.button hugo.Data.homepage.experience.button2 hugo.Data.homepage.experience.button3 hugo.Data.homepage.experience.button4 }}
+                        {{ if and $button (or (not (isset $button "enable")) $button.enable) }}
+                        <a href="{{ $button.URL | absURL }}" class="btn btn-frameless"
+                           target="_blank">
+                            <i class="{{ $button.icon }}"></i>
+                            {{ $button.btnText }}
+                        </a>
+                        {{ end }}
                     {{ end }}
-                {{ end }}
-                {{ with hugo.Data.homepage.experience.button2 }}
-                    {{ if or (not (isset . "enable")) .enable }}
-                    <a href="{{ .URL | absURL }}" class="btn btn-frameless"
-                       target="_blank">
-                        <i class="{{ .icon }}"></i>
-                        {{ .btnText }}
-                    </a>
-                    {{ end }}
-                {{ end }}
+                </div>
             </div>
         </div>
     </div>
