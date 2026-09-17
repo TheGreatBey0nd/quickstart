@@ -2,6 +2,7 @@ baseURL = "https://thegreatbey0nd.github.io/quickstart/"
 locale = "en-us"
 theme = ["radity", "hugo-shortcode-gallery"]
 disableKinds = ["taxonomy", "term"]
+cleanDestinationDir = true
 
 # Gallery-Konfiguration
 [imaging.meta]

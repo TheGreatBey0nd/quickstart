@@ -35,6 +35,30 @@
   padding-bottom: 20px !important;
 }
 
+@media (min-width: 768px) {
+  .section div[class*="col-"] img.image-left-overflow {
+    margin-left: -40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .rad-showcase__bg {
+    right: calc((100vw - 1140px) / 2 - 24px);
+    margin-left: 10rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .rad-showcase__bg {
+    right: calc((100vw - 960px) / 2 - 24px);
+    margin-left: 10rem;
+  }
+}
+
+.rad-showcase > .container > .row:first-child > [class*="col-"] {
+  padding-right: 2rem;
+}
+
 /* swipebox docks prev/next arrows in a bottom bar by default; keep that bar always
    in place so its transform doesn't shift the fixed-positioned arrows below */
 #swipebox-bottom-bar {

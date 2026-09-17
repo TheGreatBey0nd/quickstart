@@ -10,12 +10,12 @@ showcase:
   #description: "I work at <a target='_blank' href='https://radity.com/'>Radity</a>, a software development company in Switzerland. And I am a Raditian. You get the idea where theme name comes from. Keep cool, stay in touch. You can download this theme from <a target='_blank' href='https://github.com/radity/raditian-free-hugo-theme'>github</a>."
   description: "Ich singe auf Hochzeiten, Taufen, Geburtstagen, Jubiläen, Firmenfeiern und Beerdigungen. Ich singe auf Deutsch, Englisch und Italienisch. Ich freue mich auf Ihre Anfrage."
   image:
-    alt: "Showcase keyboard and mouse image"
-    x: "img/nina-1.jpg"
-    _2x: "img/nina-1.jpg"
+    alt: "Startbild Nina"
+    x: "img/nina-11.jpg"
+    _2x: "img/nina-11.jpg"
   imageMobile:
-    alt: "Showcase keyboard and mouse image"
-    x: "img/nina-1.jpg"
+    alt: "Startbild Nina"
+    x: "img/nina-11.jpg"
 
   button:
     icon: "icon-mail-fill"
@@ -42,8 +42,8 @@ about:
     btnText: "About Me"
     URL: "https://www.linkedin.com/company/radity/"
   image:
-    x: "img/nina-2.jpg"
-    _2x: "img/nina-2.jpg"
+    x: "img/nina-10.jpg"
+    _2x: "img/nina-10.jpg"
 
 # education
 education:
@@ -99,10 +99,20 @@ experience:
     #   duration: "27. Juni 2024"
     #   mp3: "/audio/kieler-woche.mp3"
 
-    - title: "Thinking Out Loud"
-      company: "Ed Sheeran"
+    - title: "Empire State of Mind"
+      company: "Alicia Keys"
       # duration: "16.07.-18.07.2024"
-      mp3: "audio/thinkingoutloud.mp3"
+      mp3: "audio/empire.mp3"
+
+    - title: "You´ve Got a Friend"
+      company: "Carole King"
+      # duration: "16.07.-18.07.2024"
+      mp3: "audio/friend.mp3"
+
+    - title: "Faraway Voice"
+      company: "Katy Melua"
+      # duration: "16.07.-18.07.2024"
+      mp3: "audio/faraway.mp3"
 
     - title: "All of Me"
       company: "John Legend"
@@ -123,6 +133,16 @@ experience:
       company: "Sunny Dale"
       # duration: "Jun 2009 - Mar 2010"
       mp3: "audio/wirwuenschendirliebe-2.wav"
+
+    - title: "Seite an Seite"
+      company: "Christina Stürmer"
+      # duration: "Jun 2009 - Mar 2010"
+      mp3: "audio/seiteanseite-2.wav"
+
+    - title: "Can´t Hurry Love"
+      company: "The Supremes"
+      # duration: "Jun 2009 - Mar 2010"
+      mp3: "audio/canthurrylove-2.wav"
 
 
 # Client & Work
@@ -148,21 +168,21 @@ client_and_work:
     - title: "Orchester MZAD"
       description: "Auftritt mit dem Orchester MZAD."
       src: "video/mzad-3.mp4"
-      poster: "img/nina-1.jpg"
+      poster: "video/mzad-3.png"
       width: "100%"
       height: "auto"
       is_even: false
     - #title: "Orchester MZAD"
       #description: "Auftritt mit dem Orchester MZAD."
       src: "video/mzad-4.mp4"
-      poster: "img/nina-1.jpg"
+      poster: "video/mzad-4.png"
       width: "100%"
       height: "auto"
       is_even: false
     - title: "Duo"
       description: "Duo mit Bolenne"
       src: "video/duo-1.mp4"
-      poster: "img/nina-1.jpg"
+      poster: "video/duo-1.png"
       width: "100%"
       height: "auto"
       is_even: true
