@@ -35,10 +35,15 @@
   padding-bottom: 20px !important;
 }
 
-@media (min-width: 768px) {
-  .section div[class*="col-"] img.image-left-overflow {
-    margin-left: -40px;
-  }
+.about__profile-picture {
+  --about-image-padding-right: 2rem;
+  padding-right: var(--about-image-padding-right);
+}
+
+.about__profile-picture img.image-left-overflow {
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto;
 }
 
 @media (min-width: 1200px) {
