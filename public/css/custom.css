@@ -24,6 +24,14 @@
   font-family: "Jeffriana"
 }
 
+.rad-showcase p.lead {
+  white-space: pre-line;
+}
+
+.rad-showcase.rad-showcase--index {
+  padding-top: 110px;
+}
+
 .contact__submit-button {
   display: block;
   margin-top: 0;

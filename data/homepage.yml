@@ -8,7 +8,12 @@ showcase:
   title: "Die Sängerin für Ihren Anlass"
   #subtitle: "Hochzeitsängerin, Event Sängerin, Sängerin für Trauung, Sängerin für Hochzeit, Sängerin für Event, Sängerin für Firmenfeier, Sängerin für Geburtstag, Sängerin für Jubiläum, Sängerin für Taufe, Sängerin für Beerdigung"
   #description: "I work at <a target='_blank' href='https://radity.com/'>Radity</a>, a software development company in Switzerland. And I am a Raditian. You get the idea where theme name comes from. Keep cool, stay in touch. You can download this theme from <a target='_blank' href='https://github.com/radity/raditian-free-hugo-theme'>github</a>."
-  description: "Ich singe auf Hochzeiten, Taufen, Geburtstagen, Jubiläen, Firmenfeiern und Beerdigungen. Ich singe auf Deutsch, Englisch und Italienisch. Ich freue mich auf Ihre Anfrage."
+  description: |
+    Schön, dass du da bist!<br><br>
+    Ob kraftvoller Pop, gefühlvoller Soul, rockige Nummern oder zeitlose Klassiker – als vielseitige Sängerin bringe ich Musik mit Leidenschaft auf die Bühne.<br><br>
+    Mit jahrelanger Bühnenerfahrung und einem feinen Gespür für das Publikum sorge ich dafür, dass auch dein Event den richtigen Ton trifft.<br><br>
+    Von Gänsehaut-Momenten bei Hochzeiten bis hin zu energiegeladenen Live-Auftritten mit großartigen Bands oder auch kleineren Kombos, begleite ich auch deine ganz besonderen Augenblicke.<br><br>
+    Schau dich gerne um, hör rein und melde dich gern, wenn wir gemeinsam musikalische Erinnerungen schaffen wollen.
   image:
     alt: "Startbild Nina"
     x: "img/nina-11.jpg"
