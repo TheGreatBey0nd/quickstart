@@ -9,7 +9,8 @@
   color: #000 !important;
   -webkit-text-fill-color: #000 !important;
   text-shadow: none !important;
-  font-family: "Jeffriana"
+  font-family: "Jeffriana";
+  font-weight: normal;
 }
 
 .gallery-grid {

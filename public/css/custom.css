@@ -4,6 +4,7 @@
   font-family: "Jeffriana";
   font-size: 2rem;
   line-height: 1;
+  font-weight: normal;
 }
 
 @font-face {
@@ -21,7 +22,12 @@
 .testimonial__section-title,
 #portfolio h2,
 #portfolio h3 {
-  font-family: "Jeffriana"
+  font-family: "Jeffriana";
+  font-weight: normal;
+}
+
+.rad-showcase .container h1 span.rad-showcase__title {
+  font-weight: normal;
 }
 
 .rad-showcase p.lead {
@@ -192,6 +198,12 @@
   border-radius: 8px;
   display: block;
   background: #000;
+}
+
+@media (max-width: 767.98px) {
+  #portfolio .video-card video {
+    width: 100% !important;
+  }
 }
 
 .video-card h3 {

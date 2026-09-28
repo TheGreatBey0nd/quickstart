@@ -35,12 +35,10 @@ showcase:
 about:
   enable: true
   title: "Wer bin ich?"
-  content: '<p class="lead">
-    Ich bin eine Sängerin, die auf Hochzeiten, Taufen, Geburtstagen, Jubiläen, Firmenfeiern und Beerdigungen singt. Ich singe auf Deutsch, Englisch und Italienisch. Ich freue mich auf Ihre Anfrage.
-    </p>
-    <p class="lead">
-    Ich habe über 15 Jahre Erfahrung in der Arbeit mit Unternehmen aus der ganzen Welt. Ich entwerfe und entwickle digitale Produkte, um Unternehmen zu helfen und das Leben der Menschen zu verbessern.
-    </p>'
+  content: "Hallo, ich bin Nina!<br><br>
+    Wenn ich nicht gerade beruflich als Sportwissenschaftlerin Menschen in Bewegung bringe, schlägt mein Herz für die Musik. Seit meiner Studienzeit stehe ich mit Begeisterung als Cover-Sängerin auf der Bühne.<br><br>
+    Ob kraftvolle Rock-Röhre oder gefühlvolle Soul-Stimme: Ich bringe jede Menge Bühnenerfahrung, Taktgefühl und vor allem Herzblut mit.<br><br>
+    Ich freue mich darauf, auch dein Event mit dem passenden Ton zu bereichern!"
   button:
     enable: false
     icon: "icon-smile-fill"
@@ -157,7 +155,7 @@ client_and_work:
 
   videos:
     - title: "Kieler Woche"
-      description: "Kurzaufnahme aus einem Auftritt."
+      description: "Kieler Woche mit den Nordenhelden"
       src: "video/kiwo-3.mp4"
       poster: "video/kiwo-3.png"
       width: "50%"
@@ -170,8 +168,15 @@ client_and_work:
       width: "50%"
       height: "auto"
       is_even: true
+    - # title: "Magic 25"
+      # description: "Magic 25 Auftritt."
+      src: "video/magic-2.mp4"
+      poster: "video/magic-2.png"
+      width: "50%"
+      height: "auto"
+      is_even: true
     - title: "Orchester MZAD"
-      description: "Auftritt mit dem Orchester MZAD."
+      description: "Konzert mit dem MZAD Orchester"
       src: "video/mzad-3.mp4"
       poster: "video/mzad-3.png"
       width: "100%"
