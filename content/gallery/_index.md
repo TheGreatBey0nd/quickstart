@@ -15,6 +15,6 @@ description: "Eine Auswahl meiner Bilder mit Filteroptionen"
   previewType="blur" 
   embedPreview=true 
   loadJQuery=true
-  filterOptions="[{label: 'ALLE', tags: '.*'}, {label: 'Kieler Woche', tags: 'kiwo'}, {label: 'Magic 25', tags: 'magic'}, {label: 'Orchester MZAD', tags: 'mzad'} ]"
+  filterOptions="[{label: 'ALLE', tags: '.*'}, {label: 'Kieler Woche', tags: 'kiwo'}, {label: 'Magic 25', tags: 'magic'}, {label: 'Return to Musical', tags: 'musical'}, {label: 'Orchester MZAD', tags: 'mzad'} ]"
   storeSelectedFilterInUrl=false
 >}}
